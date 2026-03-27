@@ -1,0 +1,9 @@
+[phases.setup]
+nixPkgs = ["gcc" "pipenv" "python312"]
+
+[phases.install]
+cmds = ["pip install pipenv", "pipenv install --deploy"]
+
+[phases.start]
+cmd = "pipenv run gunicorn run:app -b 0.0.0.0:${PORT}"
+

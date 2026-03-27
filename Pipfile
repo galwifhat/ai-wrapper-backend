@@ -17,10 +17,9 @@ sqlalchemy = "*"
 requests = "*"
 httpx = "==0.25.0"
 gunicorn = "*"
-uvicorn = "*"
 shell = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3.12"

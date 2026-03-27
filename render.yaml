@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ai-wrapperz
+    runtime: python
+    buildCommand: pip install pipenv && pipenv install --deploy
+    startCommand: gunicorn run:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12

@@ -1,0 +1,4 @@
+python 3.12.3
+python 3.8.13
+pipx:pipenv 2023.10.24
+pipx:pipenv 2024.4.1
