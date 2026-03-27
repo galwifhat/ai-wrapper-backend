@@ -15,7 +15,7 @@ def stream():
 
     def generate():
         for chunk in stream_chat_completion(messages):
-            yield f"data: {chunk}\n\n"
+            yield chunk
 
     return Response(
         stream_with_context(generate()),
