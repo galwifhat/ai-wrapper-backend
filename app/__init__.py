@@ -13,6 +13,7 @@ def create_app():
             "http://localhost:5173",
             "http://localhost:5174",
             "https://ai-wrapper-frontend-zrf5.onrender.com",
+            "https://ai-wrapper-frontend-sooty.vercel.app/",
         ],
         supports_credentials=True,
         allow_headers=["Content-Type", "Authorization"],
