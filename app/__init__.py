@@ -9,7 +9,11 @@ def create_app():
     # Configure CORS
     CORS(
         app,
-        origins=["http://localhost:5173", "http://localhost:5174"],
+        origins=[
+            "http://localhost:5173",
+            "http://localhost:5174",
+            "https://ai-wrapper-frontend-9wi9oag14-galwifhat.vercel.app",
+        ],
         supports_credentials=True,
         allow_headers=["Content-Type", "Authorization"],
     )
