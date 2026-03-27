@@ -3,7 +3,7 @@ services:
     name: ai-wrapperz
     runtime: python
     buildCommand: pip install pipenv && pipenv install --deploy
-    startCommand: gunicorn run:app
+    startCommand: pipenv run gunicorn run:app -b 0.0.0.0:${PORT}
     envVars:
       - key: PYTHON_VERSION
         value: 3.12
