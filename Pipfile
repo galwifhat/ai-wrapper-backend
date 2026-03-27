@@ -18,6 +18,7 @@ requests = "*"
 httpx = "==0.25.0"
 gunicorn = "*"
 uvicorn = "*"
+shell = "*"
 
 [dev-packages]
 
