@@ -3,6 +3,9 @@ import json
 import requests
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+if not OPENROUTER_API_KEY:
+    raise RuntimeError("Missing OpenRouter API key")
+
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 FREE_MODEL_CHAIN = [
